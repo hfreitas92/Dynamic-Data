@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <h3> The man gets in {{message}} and goes for a ride. </h3>
+
+        <img src="/images/{{pic}}.jpg" width="390">
+
+
+       
+
+            {{#if nav}}
+            <h3> While riding away he spots the woman of his dreams! He stops to say hello.  In return she...</h3>
+          <img src="/images/pamela.jpg" width="300" height="300"> 
+           {{/if}}
+            
+             
+             
+            
+              
+   
+    </div>
+    <div class="col-md-4"></div>
+
+</div>
+{{#if nav}}
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <nav>
+        {{#list nav}}
+        <a href="{{url}}">{{title}}</a>
+        {{/list}}
+        </nav>
+    </div>
+    <div class="col-md-4"></div>
+</div>
+{{/if}}

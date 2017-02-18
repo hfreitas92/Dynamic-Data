@@ -1,0 +1,67 @@
+<!--
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <h1>{{title}}</h1>
+        <p>{{message}}</p>
+        <img src="images/dinosaur.gif"></div>
+    <div class="col-md-4"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-1"><a href="/page2/squirrel">a squirrel</a></div>
+    <div class="col-md-1"></div>
+    <div class="col-md-1"><a href="/page2/kite">a kite</a></div>
+    <div class="col-md-1"></div>
+    <div class="col-md-1"><a href="/page2/computer">a computer</a></div>
+    <div class="col-md-4"></div>
+</div>
+    
+    
+    <p>{{menu[0]}}</p>
+-->
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        {{#if title}}
+        <h1>{{title}}</h1>
+        {{/if}}
+        <p>{{message}}</p>
+        <img src="images/dinosaur.gif"></div>
+    <div class="col-md-4"></div>
+</div>
+
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-1"><a href="/page2/squirrel">a squirrel</a></div>
+    <div class="col-md-1"></div>
+    <div class="col-md-1"><a href="/page2/kite">a kite</a></div>
+    <div class="col-md-1"></div>
+    <div class="col-md-1"><a href="/page2/computer">a computer</a></div>
+    <div class="col-md-4"></div>
+</div>
+    
+     {{#with story}}
+    <p>{{menu.[0].item}}</p>
+    {{/with}}
+    
+    
+
+server.route({
+    method: 'GET',
+    path: '/test',
+    handler: {
+        view: {
+            template: 'test',
+            context:
+            {
+
+                menu: [{item: 'squirrel'},{item: 'kite'},{item: 'computer'}],
+                message: 'On a Spring Morning, Phil the Dino went to the park. Walking, he was startled by a ....'
+            }
+//
+        }
+    }
+});
