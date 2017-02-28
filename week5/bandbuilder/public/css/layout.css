@@ -1,0 +1,30 @@
+body{
+    background-color: darkturquoise;
+    font-family: sans-serif;
+}
+
+#mainForm{
+    background-color: white;
+    width: 370px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#quarters{
+    width: 100%;
+}
+
+#cars{
+    width: 100%;
+}
+
+
+
+
+
+#mainRes{
+    background-color: white;
+    width: 570px;
+    margin: 0 auto;
+    padding: 20px;
+}

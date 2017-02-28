@@ -1,0 +1,60 @@
+<div id="mainForm">
+    <div>
+        <img src="images/topimageedit.jpg" width="100%" height="100%">
+    </div>
+
+     <h3>Let's build a band and play at the perfect gig!</h3>
+    <form action="/formBand" method="POST">
+
+        <label for="monsterName">Band Name:
+            <input type="text" name="monsterName" id="monsterName" value="default">
+        </label>
+        <br>
+        <br>
+
+
+        <label for="quarters">Select a Venue: 
+                            <select multiple class="form-control" name="quarters" id="quarters">
+                                <option value="Madison Square Garden">Madison Square Garden</option>
+                                <option value="The Fillmore">The Fillmore</option>
+                                <option value="The Rat">The Rathskeller</option>
+                                <option value="Mom's Basement">Mom's Basement</option>
+                            </select>
+</label>
+
+        <br>
+        <br>
+
+            <h4>Genre:</h4>
+
+                            <div class="radio">
+                                <label for="rock">
+                                    <input type="radio" name="message" value="rock" checked id="rock"> Rock
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="metal">
+                                    <input type="radio" name="message" value="metal" id="metal"> Metal
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="country">
+                                    <input type="radio" name="message" value="country" id="country"> Country
+                                </label>
+                            </div>
+                             <div class="radio">
+                                <label for="pop">
+                                    <input type="radio" name="message" value="pop" id="pop"> Pop
+                                </label>
+                            </div>
+
+        <br>
+       
+
+    
+
+
+        <input type="submit" value="Submit">
+
+    </form>
+</div>
