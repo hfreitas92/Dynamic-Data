@@ -79,9 +79,9 @@ div
 
 Future builds of this app should include functionality that affords the user greater options for customization.  One simple example includes allowing for users to upload images that could be incorporated into the flyer design. These custom images could either be uploaded via personal files or fetched through an API connected to a service like IMGUR.
 
-The app should also explore functionality that allows for users to select from a diverse set of flyers that are generated.  These options can mean that users can see flyers of varying size and styles and the the user can select whichever is a better fit.
+The app should also explore functionality that allows for users to select from a diverse set of flyers that are generated.  These options can mean that users can see flyers of varying size and styles and that the user can select whichever is a better fit.
 
-Another piece of functionality within the form itself is allowing for user to add additional names of other acts if show has multiple performers.
+Another piece of functionality within the form itself is allowing for user to add additional names of other acts if a show has multiple performers.
 
 
 
