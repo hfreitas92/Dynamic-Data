@@ -1,6 +1,6 @@
-#About 'Band Booker'
+#About 'Flyer Builder'
 
-'Band Booker' is an easy way for bands to create a flyer for an event or for a music lover to dream up his or her perfect gig!
+'Flyer Builder' is an easy way for bands to create a flyer for an event or for a music lover to dream up his or her perfect gig!
 
 Users are able to input information about their band and upcoming event, including basic details like band name, event date etc.. which generates a simple flyer advertising the event. 
 
