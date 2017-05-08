@@ -127,10 +127,10 @@ server.route({
 
 server.route({
     method: 'GET',
-    path: '/bandbuilder',
+    path: '/flyerbuilder',
     handler: {
         view: {
-            template: 'bandbuilder'
+            template: 'flyerbuilder'
         }
     }
 });
