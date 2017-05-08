@@ -16,23 +16,23 @@ A 'if block helper' is utilized to display flyer templates, which features diffe
 
 For example, for the users that select 'rock' as their genre, code for the rock-themed template is what will be triggered and displayed. An example is shown in the code below:
 
-#if formresponse.rockchoice
+{{#if formresponse.rockchoice}}
 
-div id="rockRes"
+<div id="rockRes">
 
-p class="biggertext" {{formresponse.bandName}} /p
+<p> class="biggertext" {{formresponse.bandName}} </p>
 
-pLIVE!/p
+<p>LIVE!</p>
 
-p at /p
+<p> at </p>
 
-p class="locationtext" formresponse.setVenue formresponse.customVenue /p
+<p> class="locationtext" formresponse.setVenue formresponse.customVenue </p>
 
-p class="biggertext" formresponse.gigdate /p
+<p> class="biggertext" formresponse.gigdate </p>
 
-div
+</div>
 
-/if
+{{/if}}
 
 
 
@@ -45,6 +45,7 @@ In main.js we are setting up the parameters to fetch our images from the Shutter
 var API_URL = 'https://api.shutterstock.com/v2/';
 
 // Base 64 encode Client ID and Client Secret for use in the Authorization header
+
 function encodeAuthorization() {
     var clientId = $('input[name=client_id]').val();
     var clientSecret = $('input[name=client_secret]').val();
@@ -58,6 +59,7 @@ function encodeAuthorization() {
 }
 
 // Search media by type
+
 function search(opts, mediaType) {
     var $container = $('#' + mediaType + '-search-results');
     var createComponentFunc = mediaType === 'image' ? renderImageComponent : renderVideoComponent;
@@ -96,6 +98,7 @@ function search(opts, mediaType) {
 
 
 // Create image wrapper component
+
 function renderImageComponent(image, minHeightCSS) {
     if (!image || !image.assets || !image.assets.preview || !image.assets.preview.url) return;
 
